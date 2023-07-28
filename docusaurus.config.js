@@ -46,7 +46,8 @@ const config = {
           { 
             theme: "github-dark-dimmed", 
             lineNumbers: true,
-            showCopyButton: true
+            showCopyButton: true,
+            triggerPosition: "25%"
           }],
         ],
           sidebarPath: require.resolve('./sidebars.js'),
