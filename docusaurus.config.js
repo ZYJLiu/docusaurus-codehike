@@ -40,14 +40,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          beforeDefaultRemarkPlugins: [
-            [remarkCodeHike, 
-            { 
-              theme: "nord", 
-              lineNumbers: true,
-              showCopyButton: true, 
-            }],
-          ],
+        beforeDefaultRemarkPlugins: [
+          [remarkCodeHike, 
+          { 
+            theme: "github-dark-dimmed", 
+            lineNumbers: true,
+            showCopyButton: true
+          }],
+        ],
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
