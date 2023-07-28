@@ -2,42 +2,143 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# Scrollycoding
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+<CH.Scrollycoding>
 
-## Create your first React Page
+## Step 1
 
-Create a file at `src/pages/my-react-page.js`:
+Lorem ipsum dolor sit amet, consectetur adipiscing something about points, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+> Nova in illis at dabat legi harundine non, ova miratur? _Quid in_ sole aer
+> ad diffusa illis voluisti fidensque coniugiale laniata curam. Aras rivus
+> eripuit, qua fistula haec partus; serpens, negat.
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
+Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
+
+```js app.js focus=3:10
+const { lorem, ipsum } = dolor({
+  sit: {
+    amet: 1,
+    consectetur: 2,
+    adipiscing: (elit) => ({
+      sed: elit,
+    }),
+    eiusmod: (tempor) => ({
+      incididunt: tempor,
+    }),
+    ut: (labore) => ({
+      et: labore,
+      dolore: labore + 1,
+    }),
+    magna: (aliqua) => ({
+      ut: aliqua,
+    }),
+    nostrud: (elit) => ({
+      exercitation: elit,
+      ullamco: elit,
+    }),
+    laboris: (elit) => ({
+      nisi: elit,
+    }),
+  },
+});
 ```
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+---
 
-## Create your first Markdown Page
+## Step 2
 
-Create a file at `src/pages/my-markdown-page.md`:
+Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in.
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
+Praesent elementum facilisis leo vel fringilla est ullamcorper eget.
 
-This is a Markdown page
+Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+
+Morbi quis commodo.
+
+```js app.js focus=11:17
+
 ```
 
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+---
+
+## Step 3
+
+Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu.
+
+- Nisi lacus sed viverra tellus in
+- Nibh cras pulvinar mattis nunc sed
+- Luctus accumsan tortor posuere ac
+
+Ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+
+```js app.js focus=11:14
+const { lorem, ipsum } = dolor({
+  sit: {
+    amet: 1,
+    consectetur: 2,
+    adipiscing: (elit) => ({
+      sed: elit,
+    }),
+    eiusmod: (tempor) => ({
+      incididunt: tempor,
+    }),
+    ut: (labore) => ({
+      et: lorem(labore * ipsum),
+      dolore: lorem(labore + 1),
+    }),
+    nostrud: (elit) => ({
+      exercitation: elit,
+      ullamco: elit,
+    }),
+    laboris: (elit) => ({
+      nisi: elit,
+    }),
+  },
+});
+```
+
+---
+
+## Step 4
+
+Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt.
+
+Sed blandit libero volutpat sed cras.
+
+- Nisi lacus sed viverra tellus in
+- Nibh cras pulvinar mattis nunc sed
+
+Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae.
+
+```js app.js focus=15:21
+
+```
+
+---
+
+## Step 5
+
+Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in.
+
+Praesent elementum facilisis leo vel fringilla est ullamcorper eget.
+
+Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat.
+
+Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra.
+
+- Fringilla ut morbi tincidunt augue interdum velit euismod.
+- Luctus accumsan tortor posuere ac ut consequat semper viverra.
+
+Morbi quis commodo.
+
+```js app.js
+
+```
+
+</CH.Scrollycoding>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

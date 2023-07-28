@@ -41,7 +41,12 @@ const config = {
       ({
         docs: {
           beforeDefaultRemarkPlugins: [
-            [remarkCodeHike, { theme: "nord" }],
+            [remarkCodeHike, 
+            { 
+              theme: "nord", 
+              lineNumbers: true,
+              showCopyButton: true, 
+            }],
           ],
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -49,18 +54,11 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
         theme: {
-          
           customCss: [
             require.resolve("@code-hike/mdx/styles.css"),
-            require.resolve('./src/css/custom.css')
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/codehike-custom.css')
           ],
         },
       }),
@@ -85,7 +83,6 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -141,6 +138,16 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
     }),
 };

@@ -28,3 +28,19 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.theme-doc-toc-desktop {
+  display: none;
+  width: 0;
+}
+
+.col.col--3 {
+  display: none;
+}
+
+
+main[class*='docMainContainer'] div.container > div.row > div:first-of-type {
+  --ifm-col-width: 100%;
+  flex: 0 0 var(--ifm-col-width) !important;
+  max-width: var(--ifm-col-width) !important;
+}
